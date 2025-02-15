@@ -33,7 +33,7 @@ namespace Live_Currency_Converter
             var client = new RestClient("https://api.apilayer.com/");
 
             var request = new RestRequest(relativeURI, Method.Get);
-            request.AddHeader("apikey","H4d8fEDbmJxI63r5JfVWTbapMkaxmwUA");
+            request.AddHeader("apikey","Your-API-Key");
 
             RestResponse response = client.Execute(request);
             return response.Content;
